@@ -7,5 +7,5 @@ RUN apt-get update \
         tornado \
         Pillow
 EXPOSE 51115
-COPY . .
+COPY host-app.py host-app.py
 CMD ["python3", "host-app.py"]

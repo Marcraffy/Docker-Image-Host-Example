@@ -15,7 +15,7 @@ class MainHandler(tornado.web.RequestHandler):
         self.finish()
 
 def getPicture(): 
-    path = './images/'
+    path = './data/'
     imagesList = listdir(path)
     imagePath = imagesList[random.randint(0, len(imagesList) - 1)]
     img_io = BytesIO()
